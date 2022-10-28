@@ -28,7 +28,7 @@ const Home = () => {
   const removeChild = (names) => {
     if (names.length === 1) {
       addLeaf(tree.filter((it) => it.id !== names[names.length - 1]))
-      return 
+      return
     }
     const item1 = getItem(tree, names.slice(0, names.length - 1))
     item1.children = item1.children.filter((it) => it.id !== names[names.length - 1])
@@ -55,7 +55,7 @@ const Home = () => {
   return (
     <div className="container mx-auto p-8">
       <Head title="Dashboard" />
-      nn
+      Tree
       <div>
         {tree.map((it) => {
           return (
